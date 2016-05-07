@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Livepool FC TV</title>
+
+<style>
+body{
+	background-color: #000015;
+	 background-image: url("images/wallpaperhome.jpg");
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-size: 100%;
+	}
+
+@font-face{
+	font-family: roboto;
+	src: url("fonts/Roboto-Draft-Regular.ttf");
+}
+
+#title{
+	font-family:opensans;
+	font-size:30px;
+	color:#ebebeb;
+	padding-left:200px;
+	float:left;
+	padding-top:100px	;
+}
+
+#logo{ 
+	padding-left:150px;
+	float:left;
+	position:absolute;
+	background-color: none;
+
+}
+@font-face {
+    font-family: font1;
+    src: url("fonts/Arvo-Regular.ttf");
+}
+
+#menubar ul{
+	float:left;
+	list-style-type: none;
+	width:100%;
+	overflow:hidden;
+	border-radius:30px;
+	font-family: font1;
+	font-size:25px;
+
+}
+#menubar li{
+	float:left;
+}
+#menubar li:first-child{
+	float:left;
+	margin-left: 300px;
+}
+
+
+#menubar li a{
+	text-decoration: none; 
+	color:#ebebeb;
+	text-align:center;
+	padding:20px;
+	display:block;	
+	/*background-color: #dddddd;*/
+}
+
+#menubar li a:hover{
+	background-color: #ebebeb;
+	border-radius:30px;
+	color:black	;
+}
+
+#videolinks{
+	width:62.5;
+	height:52.08%;
+	float:left;
+	padding-left: 150px;
+}
+
+#videoframe{
+	width:1200px;
+	height:900px;
+	background-color: none;
+	border:none;
+}
+
+@font-face{
+	font-family: opensans; 
+	src: url('fonts/opensans.ttf');
+
+}
+
+#dropbox{
+	height:15px;
+	width:230px;
+	color:#ebebeb;
+	background-color: #c60001;
+	border:3px solid black;
+	padding-top:5px;
+	padding-bottom:25px;
+	padding-left:10px;
+	font-size:23px;	
+	margin-top:10px;
+	position:relative;
+	left:-20px;
+	border-radius: 10px;
+}
+
+#dropdown{
+	display:none;
+	position:absolute;
+	height:120px;
+	width:230px;
+	color:#c60001;
+	background-color: #000000;
+	border:3px solid black;
+	padding-top:5px;
+	padding-bottom:20px;
+	padding-left:10px;
+	font-size:23px;	
+	margin-top:0px;
+	float:left;
+	left:185px;
+	border-radius: 10px;
+}
+
+#feat,#exc,#all,#best{
+	display:block;
+}
+#opt{
+	position:absolute;
+	left:10px;
+	display:block;
+	top:-20px;
+}
+
+</style>
+
+</head>
+
+<body>
+			<div style="background-color:#C60001;width:1200px;height:150px;margin-top:0px;border-radius:10px;display:block;align:center;margin:auto">
+			<div id="logo">
+				<img src="images/logo.jpg"/>
+			</div>
+			
+
+			<div id="menubar">
+			<br><br>
+				<ul>
+				<li><a href="frontpage.html">Home</a></li>
+				<li><a href="news.html">News</a></li>
+				<li><a href="team.php">Team</a></li>
+				<li><a href="video.html">Videos</a></li>		
+				<li><a href="club.php">Club</a></li>
+				</ul>
+			</div>
+	
+			</div>
+
+<script>
+function displaybox(value){
+	if(value==1)
+	{
+		var object=document.getElementById('dropdown');
+		dropdown.style.display="block";
+	}
+	else
+	{
+		var object=document.getElementById('dropdown');
+		dropdown.style.display="none";
+	}
+var para=document.getElementById('opt');
+if(value==2) { para.textContent="Featured Videos";
+		videoframe.src="video/featuredvideos.html";
+}
+
+else if(value==3) { para.textContent="Exclusive Videos";
+		videoframe.src="video/exclusivevideos.html";
+}
+
+else if(value==4) { para.textContent="Best of Liverpool";
+		videoframe.src="video/bestvideos.html";
+	}
+
+else if(value==5) { para.textContent="All Videos";
+		videoframe.src="video/allvideos.html";
+	}
+}
+</script>
+
+<div id="wrapper" style="background-color:none;width:98%;height:46.8%">
+
+<div id="title">Liverpool FC TV<br> 
+<div id="dropbox" >
+<p id="opt">Featured videos</p> <img src="images/arrow/down.png" id="arrow" style="margin-top:0px;padding-top:0px;float:right;display:block;margin-right:10px;" onclick="displaybox(1)">
+</div>
+<div id="dropdown">
+<div id="feat" onclick="displaybox(2)">Featured Videos<br></div>
+<div id="exc"onclick="displaybox(3)">Exclusive Videos<br></div>
+<div id="best" onclick="displaybox(4)">Best of Liverpool<br></div>
+<div id="all" onclick="displaybox(5)">All Videos</div>
+</div>
+</div>
+
+<div id="videolinks">
+	<br><br><br><br>
+	<iframe id="videoframe" src="video/featuredvideos.html " id="videoframe"></iframe>
+</div>
+</div>
+<br><br>
+</body>
+</html>

@@ -1,0 +1,8 @@
+The sql commands can be found in "liverpool.sql" file which can be imported to phpmyadmin to create the Database.
+
+The index page is called "frontpage.html"
+
+Please be connected to the internet while using it. Thank you.
+
+
+Copyrights 2016 Abhishek Sampath

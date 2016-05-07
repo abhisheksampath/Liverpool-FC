@@ -1,0 +1,298 @@
+body {
+	background-color: #000015;
+	 background-image: url("images/wallpaperhome.jpg");
+	 background-repeat: no-repeat;
+	 background-attachment: fixed;
+	 background-position: center;
+	 background-size: 100%;
+}
+
+#container{
+	background-color: none;
+	width:1200px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#logo{ 
+	padding-left: 150px;
+	float:left;
+	position:absolute;
+	background-color: none;
+
+}
+
+@font-face {
+    font-family: font1;
+    src: url("fonts/Arvo-Regular.ttf");
+}
+
+#menubar ul{
+	float:left;
+	list-style-type: none;
+	width:100%;
+	overflow:hidden;
+	border-radius:30px;
+	font-family: font1;
+	font-size:25px;
+}
+#menubar li{
+	float:left;
+}
+#menubar li:first-child{
+	float:left;
+	margin-left: 300px;
+}
+
+
+#menubar li a{
+	text-decoration: none; 
+	/*color:#00b8e6;*/
+	color:white;
+	text-align:center;
+	padding:20px;
+	display:block;	
+	/*background-color: #dddddd;*/
+}
+
+#menubar li a:hover{
+	/*background-color: #00b8e6;*/
+	background-color: #ebebeb	;
+	border-radius:30px;
+	color:black	;
+}
+
+#video{
+	/*background-color: rgba(58, 172, 114,0.1);*/
+	float:left;
+	padding-left:120px;
+}
+@font-face{
+	font-family: roboto;
+	src: url("fonts/Roboto-Draft-Regular.ttf");
+}
+
+#videolink{
+	color:#d5ff8b;
+	font-size:30px;
+	font-family: roboto;
+
+}
+
+#slider{
+	width:310px;
+	height:236px;
+	position:relative;
+	clear:both;
+	padding-left: 10px;
+}
+
+#left{
+	top:45%;
+	left:0px;
+	position:absolute;
+	width:20px;
+	float:left;
+	clear:both;
+	padding-left: 10px;	
+
+}
+
+#right{
+	top:45%;
+	right:0px;
+	position:absolute;
+	width:20px;
+	float:left;
+	clear:both;
+	/*padding-left: 50px;*/
+
+}
+
+#image{
+	position:absolute;
+	width:315px;
+	height:236px;
+	margin:auto;
+	clear:both;
+	float:left;
+	/*padding-left: 50px;*/
+}
+.watchnow{
+		margin:auto;
+		width:98px;
+		padding:10px;
+		border-radius:10px;
+		display:block;
+		background-color:white;
+		color:#000000;
+		font-size:20px;
+		font-family: roboto;
+		clear:both;
+		text-decoration: none;
+}
+
+#left:hover{
+
+	opacity:0.5;
+}
+
+#right:hover{
+	
+	opacity:0.5;
+}
+
+.leftclass{
+	background-color: white;
+	border-radius: 100px;
+}
+
+.rightclass{
+	background-color: white;
+	border-radius: 100px;
+}
+
+#table{
+	padding-left:150px;
+	float:left;
+}
+
+.toprow{
+	display:block;
+	float:left;
+	transition: all 100ms ease-in-out;
+	overflow:visible;
+}
+
+.siderow{
+	display:block;
+	float:left;
+
+}
+
+.middlepic{
+	display:block;
+	float:left;
+}
+
+#sideimage{
+	/*margin:0px;*/
+	width:200px;
+	height:408px;
+	float:left;
+
+}
+#middle{
+	
+	/*margin:0px;*/
+	float:left;
+	width:800px;
+	height:408px;
+
+}
+
+#sponsors{
+	width:1200px;
+	background:#ebebeb;
+	height:230px;
+	color:white;
+	clear:both;
+	padding-top: 35px;
+	margin-bottom:0px;
+}
+
+#copyrights{
+	
+	width:1200px;
+	float:left;
+	background:#C60001;
+	color:white;
+	/*clear:both;*/
+}
+
+#copy{
+	font-family:font1;
+	font-size:15px;
+}
+
+#linkbar{
+	height:43px;
+	width:1200px;
+	clear:both;
+	background-color:#ebebeb;
+}
+
+#milner:hover,#coutinho:hover,#firmino:hover,#allen:hover,#lallana:hover,#henderson:hover,#moreno:hover,#mignolet:hover,#skrtel:hover,#lovren:hover,#clyne:hover,#can:hover,#sturridge:hover,#kolo:hover,#origi:hover,#benteke:hover {
+	opacity:0.2;
+
+}
+.imagetext{
+	position:absolute;
+	width:150px;
+	color:white;
+	visibility:hidden;
+	font-family:font1;
+}
+#milner:hover + #milnert {
+	visibility:visible;
+}
+#coutinho:hover + #coutinhot {
+	visibility:visible;
+}
+
+#firmino:hover + #firminot {
+	visibility:visible;
+}
+#lallana:hover + #lallanat {
+	visibility:visible;
+}
+#allen:hover + #allent {
+	visibility:visible;
+}
+#henderson:hover + #hendersont {
+	visibility:visible;
+}
+#moreno:hover + #morenot {
+	visibility:visible;
+}
+#mignolet:hover + #mignolett {
+	visibility:visible;
+}
+#skrtel:hover + #skrtelt {
+	visibility:visible;
+}
+#lovren:hover + #lovrent {
+	visibility:visible;
+}
+#clyne:hover + #clynet {
+	visibility:visible;
+}
+#benteke:hover + #benteket {
+	visibility:visible;
+}
+#can:hover + #cant {
+	visibility:visible;
+}
+#kolo:hover + #kolot {
+	visibility:visible;
+}
+#sakho:hover + #sakhot {
+	visibility:visible;
+}
+#origi:hover + #origit {
+	visibility:visible;
+}
+#sturridge:hover + #sturridget {
+	visibility:visible;
+}
+
+
+#imgbg{
+	width:1200px;
+	height:816px;
+	background-color:rgb(198,0,1);
+	clear:both;
+	float:left;
+	position:relative;
+}
