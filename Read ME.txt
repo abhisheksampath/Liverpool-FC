@@ -6,6 +6,9 @@ Index page is referred as "frontpage.html".
 The sql commands can be found in "liverpool.sql" which can be imported.
 Please be connected to the internet while using it. Thank you.
 
+To Run it locally, 
+  1.install WAMP, move files to wamp\www folder
+  2. Install mySQL and run the above sql file
 
 This is strictly educational and academical.
 © Copyrights 2016 Abhishek Sampath.
